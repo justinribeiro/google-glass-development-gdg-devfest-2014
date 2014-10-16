@@ -1,0 +1,67 @@
+.li-data {
+ color: #96CA33;
+ font-weight: 800;
+ padding: 0 0.25em;
+}
+
+.iconned {
+ padding-right: 0.6em !important;
+}
+
+/** Fix for FontAwesome w/Reveal **/
+.reveal i.fa{
+   font-family: 'FontAwesome';
+   font-style: normal;
+   font-size: 100%;
+}
+
+.text-center {
+ text-align: center;
+}
+
+.reveal ul li, .reveal ol li  {
+ padding-bottom: 0.6em;
+}
+
+.reveal pre code {
+ max-height: none;
+}
+
+.temp {
+color: #96CA33;
+font-weight: 800;
+padding: 0 0.25em;
+}
+#sensorOutputs div {
+padding: 0.5em;
+}
+
+.smaller {
+padding: 0 !important;
+font-size: 75% !important;
+}
+
+glass-timer {
+  font-family: Lato, sans-serif;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  color: #fff;  
+}
+
+.fbox {
+  display: -webkit-flex;
+  display: flex;
+}
+.w30 {
+  width: 30%;
+}
+.w70 {
+  -webkit-flex: 1;
+          flex: 1;
+}
+
+.reveal section img {
+  border: 0;
+  box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+}

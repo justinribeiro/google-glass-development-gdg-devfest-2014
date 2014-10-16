@@ -1,0 +1,22 @@
+{
+  "name": "mirror-api-and-beyond",
+  "version": "0.0.1",
+  "homepage": "",
+  "authors": [
+    "Justin Ribeiro <justin@justinribeiro.com>"
+  ],
+  "description": "Demos and things",
+  "main": "demos.html",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "polymer": "Polymer/polymer#~0.4.1"
+  }
+}
