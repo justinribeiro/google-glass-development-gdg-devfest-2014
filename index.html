@@ -4,9 +4,9 @@
   <head>
     <meta charset="utf-8">
 
-    <title>Mirror API and beyond / GDG DevFest Fresno 2014</title>
+    <title>Google Glass: Introduction / GDG DevFest Fresno 2014</title>
 
-    <meta name="description" content="Presentation slides for Mirror API and beyond for GDG DevFest Fresno 2014">
+    <meta name="description" content="Presentation slides for Google Glass: Introduction for GDG DevFest Fresno 2014">
     <meta name="author" content="Justin Ribeiro">
 
     <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -20,7 +20,7 @@
     <link rel="stylesheet" href="css/reveal.min.css">
     <link rel="stylesheet" href="css/theme/beige.css" id="theme">
     <link rel="stylesheet" href="css/highlight-theme/obsidian.css">
-    <link rel="stylesheet" href="css/custom.css">  
+    <link rel="stylesheet" href="css/custom.css">
 
     <!-- For syntax highlighting -->
     <link rel="stylesheet" href="lib/css/zenburn.css">
@@ -324,7 +324,7 @@ mirror_service.timeline().insert(body={
 <pre><code>
 mirror_service.timeline().insert(body={
     'notification': {'level': 'DEFAULT'},
-    'html': '<article><section><p class="text-auto-size">Welcome to 
+    'html': '<article><section><p class="text-auto-size">Welcome to
       <em class="yellow">Glass!</em> This is my very first timeline card insert.</p>
       </section></article>'
   ).execute()
@@ -385,7 +385,7 @@ mirror_service.timeline().insert(body={
     'text': 'Timeline card with a couple menu options.',
     'menuItems': [
         {'action': 'CUSTOM', 'id': 'my-id', 'values': [ { 'displayName': "My Menu Item" } ] },
-        {'action': 'DELETE'}] 
+        {'action': 'DELETE'}]
     }).execute()
 
 </code></pre>
@@ -429,7 +429,7 @@ mirror_service.subscriptions().insert(body={
             <li>In dev, you can use the <a href="https://developers.google.com/glass/tools-downloads/subscription-proxy">SSL proxy</a></li>
             <li>In prod, you have to use an SSL endpoint</li>
             <li>The problem: no one wants to deploy remote even with a SSL proxy</li>
-            <li>Solution: <a href="https://ngrok.com/">ngork</a></li>
+            <li>Solution: <a href="https://ngrok.com/">ngrok</a></li>
           </ul>
         </section>
 
@@ -542,7 +542,7 @@ def dailyjob():
         </section>
 
         <section>
-          <h2>A simple App Engine Cron job</h2>
+          <h2>A simple App Engine Task Queue</h2>
 <pre><code>
 @glasstaskfuture.route('/glassCallback', methods=['POST'])
 def glassCallback():
@@ -678,7 +678,7 @@ List<String> providers = locationManager.getProviders(
 for (String provider : providers) {
     locationManager.requestLocationUpdates(provider, minTime,
             minDistance, listener);
-} 
+}
 
 </code></pre>
         </section>
